@@ -20,7 +20,7 @@ async def on_ready():
 async def on_message(message):
     global ModeFlag
 
-    if message.author.bot:
+    if message.author == client.user:
         return
     
     if ModeFlag == 1:
@@ -35,10 +35,10 @@ async def on_message(message):
                break
 
     if message.content.startswith("hello"):
-        m = "こんにちは、" + message.author.name + "さん"
+        m = "こんにちは、" + message.author.display_name + "さん"
         await message.channel.send(m)
 
-    if message.content == '!google': #google検索機能 https://qiita.com/o-chang/items/e45fb7074654f8eb26ea
+    if message.content == '/google': #google検索機能 https://qiita.com/o-chang/items/e45fb7074654f8eb26ea
         ModeFlag = 1
         await message.channel.send('検索するワードをチャットで発言してね')
 
