@@ -1,1 +1,17 @@
 # Discord-bot
+README書き方  https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+9/28
+
+Discord bot制作開始
+
+clientのintents部分難あり，Discordのウェブサイトの方での設定で許可する必要あり
+
+helloというと返事が返ってくる機能
+
+9/29
+
+google検索を追加　https://qiita.com/o-chang/items/e45fb7074654f8eb26ea
+
+`if ModeFlag == 1:`部分を`if message.content == '!google'`の後ろに置くと，!googleで検索されてしまう
+
