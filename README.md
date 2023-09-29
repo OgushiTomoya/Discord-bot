@@ -13,5 +13,6 @@ helloというと返事が返ってくる機能
 
 google検索を追加　https://qiita.com/o-chang/items/e45fb7074654f8eb26ea
 
-`if ModeFlag == 1:`部分を`if message.content == '!google'`の後ろに置くと，!googleで検索されてしまう
+`if ModeFlag == 1:`部分を`if message.content == '/google'`の後ろに置くと，/googleで検索されてしまう
 
+hello機能の返事内容を，ユーザ名(makiron0910)から表示名(サーバーでの名前)に変更
