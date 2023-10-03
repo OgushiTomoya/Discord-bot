@@ -23,7 +23,6 @@ async def on_ready():
 @client.event
 async def on_message(message):
     global ModeFlag
-    global phasmo_evidence_message
 
     if message.author == client.user:
         return
