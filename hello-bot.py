@@ -25,8 +25,8 @@ async def on_message(message):
     global ModeFlag
     global phasmo_evidence_message
 
-    #if message.author == client.user:
-    #    return
+    if message.author == client.user:
+        return
     
     if ModeFlag == 'google':
         ModeFlag = ''
